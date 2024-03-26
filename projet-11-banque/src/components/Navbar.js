@@ -1,7 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import bankLogo from "../assets/argentBankLogo.png";
+import bankLogo from "../assets/argentBankLogo.webp";
+import AccountNav from "./AccountNav";
 
 export default function Navbar() {
   return (
@@ -14,12 +15,8 @@ export default function Navbar() {
         />
         <h1 className="sr-only">Argent Bank</h1>
       </NavLink>
-      <div>
-        <NavLink className="main-nav-item" to="/sign-in">
-          <i className="fa-solid fa-circle-user"></i>
-          Sign In
-        </NavLink>
-      </div>
+
+      <AccountNav />
     </nav>
   );
 }

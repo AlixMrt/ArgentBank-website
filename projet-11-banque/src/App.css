@@ -70,8 +70,20 @@ body {
   width: 200px;
 }
 
+.account-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+
+  margin-bottom: 36px;
+  @media (min-width: 920px) {
+    margin-bottom: 0px;
+  }
+}
+
 .hero {
-  background-image: url("./assets/bank-tree.jpeg");
+  background-image: url("./assets/bank-tree.webp");
   background-position: 0 -50px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -153,6 +165,11 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.sign-in {
+  width: 50%;
+  margin: 50px auto;
+}
+
 .sign-in-button {
   display: block;
   width: 100%;
@@ -200,6 +217,15 @@ body {
 .input-wrapper input {
   padding: 5px;
   font-size: 1.2rem;
+}
+
+.error-border {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 1rem;
 }
 
 .footer {
